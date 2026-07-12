@@ -293,8 +293,8 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="services-box-3">
 							<div class="services-content">
-								<h4><a href="{% url 'products' %}">Pressure Measurement</a></h4>
-								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+								<h4><a href="{% url 'products' %}?category=pressure#product-catalog">Pressure Measurement</a></h4>
+								<a class="view-detail" href="{% url 'products' %}?category=pressure#product-catalog"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
 								<img src="{% static 'website/images/iconimg/icon-img1.png' %}" alt="">
@@ -311,8 +311,8 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="services-box-3">
 							<div class="services-content">
-								<h4><a href="{% url 'products' %}">Level Measurement</a></h4>
-								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+								<h4><a href="{% url 'products' %}?category=level#product-catalog">Level Measurement</a></h4>
+								<a class="view-detail" href="{% url 'products' %}?category=level#product-catalog"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
 								<img src="{% static 'website/images/iconimg/icon-img2.png' %}" alt="">
@@ -331,21 +331,21 @@
 						</div> -->
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<!-- <div class="services-box-3 no-margin-md-bottom">
+						<div class="services-box-3 no-margin-md-bottom">
 							<div class="services-content">
-								<h4><a href="services-detail.html">Pneumatic Products</a></h4>
-								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+								<h4><a href="{% url 'products' %}?category=mechanical#product-catalog">Mechanical valves</a></h4>
+								<a class="view-detail" href="{% url 'products' %}?category=mechanical#product-catalog"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
 								<img src="{% static 'website/images/iconimg/icon-img4.png' %}" alt="">
 							</div>
-						</div> -->
+						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="services-box-3 no-margin-md-bottom">
 							<div class="services-content">
-								<h4><a href="{% url 'products' %}">Flow Measurement</a></h4>
-								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+								<h4><a href="{% url 'products' %}?category=flow#product-catalog">Flow Measurement</a></h4>
+								<a class="view-detail" href="{% url 'products' %}?category=flow#product-catalog"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
 								<img src="{% static 'website/images/iconimg/icon-img5.png' %}" alt="">
@@ -355,8 +355,8 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="services-box-3 no-margin-md-bottom">
 							<div class="services-content">
-								<h4><a href="{% url 'products' %}">Temp Measurement</a></h4>
-								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+								<h4><a href="{% url 'products' %}?category=temperature#product-catalog">Temp Measurement</a></h4>
+								<a class="view-detail" href="{% url 'products' %}?category=temperature#product-catalog"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
 								<img src="{% static 'website/images/iconimg/icon-img6.png' %}" alt="">
@@ -628,77 +628,107 @@
 				</button>
 			
 				<div class="projects projects-list product-range-carousel" id="productRangeCarousel">
-			
+
 					<div class="project-item construction col-lg-3 col-md-4 col-sm-6 no-padding">
 						<div class="inner">
-							<img src="{% static 'website/images/productrange/ma.png' %}" alt=""> 
+							<img src="{% static 'website/images/productrange/ma.png' %}" alt="">
 							<div class="project-info">
-								<div class="project-meta">Mechanical valves and automation solutions</div>
+								<div class="project-meta">Mechanical Valves & Automation</div>
 								<div class="project-content">
-									<h3><a href="{% url 'products' %}">Mechanical valves and automation solutions</a></h3>
-									<p>Ball valves, gate valves, globe valves, butterfly valves, non-return valves, diaphragm valves, safety valves, strainers, and steam traps.</p>
-									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+									<h3>
+										<a href="{% url 'products' %}?category=mechanical#product-catalog">
+											Mechanical valves and automation solutions
+										</a>
+									</h3>
+									<p>Ball valves, gate valves, globe valves, butterfly valves, non-return valves, diaphragm valves, safety valves, strainers, steam traps, and automation solutions.</p>
+									<a href="{% url 'products' %}?category=mechanical#product-catalog">
+										View products <i class="icon ion-md-add-circle"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-			
+				
 					<div class="project-item construction col-lg-3 col-md-4 col-sm-6 no-padding">
 						<div class="inner">
-							<img src="{% static 'website/images/productrange/pm.png' %}" alt=""> 
+							<img src="{% static 'website/images/productrange/pm.png' %}" alt="">
 							<div class="project-info">
-								<div class="project-meta">Industrial Products</div>
+								<div class="project-meta">Pressure Measurement</div>
 								<div class="project-content">
-									<h3><a href="{% url 'products' %}">Industrial Valves</a></h3>
-									<p>Ball valves, gate valves, globe valves, butterfly valves, non-return valves, diaphragm valves, safety valves, strainers, and steam traps.</p>
-									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+									<h3>
+										<a href="{% url 'products' %}?category=pressure#product-catalog">
+											Pressure Measurement
+										</a>
+									</h3>
+									<p>Pressure gauges, diaphragm seal gauges, pressure transmitters, pressure switches, and other pressure monitoring instruments.</p>
+									<a href="{% url 'products' %}?category=pressure#product-catalog">
+										View products <i class="icon ion-md-add-circle"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-			
+				
 					<div class="project-item energy col-lg-3 col-md-4 col-sm-6 no-padding">
 						<div class="inner">
-							<img src="{% static 'website/images/productrange/lm.png' %}" alt=""> 
+							<img src="{% static 'website/images/productrange/lm.png' %}" alt="">
 							<div class="project-info">
-								<div class="project-meta">Industrial Products</div>
+								<div class="project-meta">Level Measurement</div>
 								<div class="project-content">
-									<h3><a href="{% url 'products' %}">Automation Products</a></h3>
-									<p>Pneumatic butterfly valves, motorised butterfly valves, pneumatic ball valves, motorised ball valves, control valves, solenoid valves, and automation accessories.</p>
-									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+									<h3>
+										<a href="{% url 'products' %}?category=level#product-catalog">
+											Level Measurement
+										</a>
+									</h3>
+									<p>Level switches, level indicators, level transmitters, magnetic level gauges, and level monitoring solutions for industrial applications.</p>
+									<a href="{% url 'products' %}?category=level#product-catalog">
+										View products <i class="icon ion-md-add-circle"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-			
+				
 					<div class="project-item engineering col-lg-3 col-md-4 col-sm-6 no-padding">
 						<div class="inner">
-							<img src="{% static 'website/images/productrange/fm.png' %}" alt=""> 
+							<img src="{% static 'website/images/productrange/fm.png' %}" alt="">
 							<div class="project-info">
-								<div class="project-meta">Industrial Products</div>
+								<div class="project-meta">Flow Measurement</div>
 								<div class="project-content">
-									<h3><a href="{% url 'products' %}">Instrumentation</a></h3>
-									<p>Pressure gauges, temperature gauges, diaphragm seal gauges, flow meters, pressure transmitters, pressure switches, RTDs, thermowells, and level switches.</p>
-									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+									<h3>
+										<a href="{% url 'products' %}?category=flow#product-catalog">
+											Flow Measurement
+										</a>
+									</h3>
+									<p>Flow meters and flow measurement instruments designed for accurate monitoring of liquids, gases, steam, and industrial process media.</p>
+									<a href="{% url 'products' %}?category=flow#product-catalog">
+										View products <i class="icon ion-md-add-circle"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-			
+				
 					<div class="project-item petroleum col-lg-3 col-md-4 col-sm-6 no-padding">
 						<div class="inner">
-							<img src="{% static 'website/images/productrange/tm.png' %}" alt=""> 
+							<img src="{% static 'website/images/productrange/tm.png' %}" alt="">
 							<div class="project-info">
-								<div class="project-meta">Industrial Products</div>
+								<div class="project-meta">Temperature Measurement</div>
 								<div class="project-content">
-									<h3><a href="{% url 'products' %}">Pneumatics</a></h3>
-									<p>Pneumatic cylinders, air filter regulator units, air pressure regulators, air combination units, solenoid valves, air blow guns, push-in fittings, and pneumatic accessories.</p>
-									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+									<h3>
+										<a href="{% url 'products' %}?category=temperature#product-catalog">
+											Temperature Measurement
+										</a>
+									</h3>
+									<p>Temperature gauges, RTDs, thermowells, temperature sensors, and temperature monitoring instruments for industrial use.</p>
+									<a href="{% url 'products' %}?category=temperature#product-catalog">
+										View products <i class="icon ion-md-add-circle"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-			
+				
 				</div>
 			
 				<button class="product-nav product-next" type="button" aria-label="Next product">

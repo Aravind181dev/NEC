@@ -171,7 +171,7 @@
 			    </div>
 			</div>
 
-			<section>
+			<section id="product-catalog">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -200,6 +200,22 @@
 							
 
 							<div id="filters" class="cat-filter">
+								<a href="#"
+								   data-filter="*"
+								   class="filter-item all-cat {% if selected_category == 'all' %}selected{% endif %}">
+									All Products
+								</a>
+							
+								{% for category in categories %}
+									<a href="#"
+									   data-filter=".{{ category.slug }}"
+									   class="filter-item {% if selected_category == category.slug %}selected{% endif %}">
+										{{ category.name }}
+									</a>
+								{% endfor %}
+							</div>
+
+							<!-- <div id="filters" class="cat-filter">
 								<a href="#" data-filter="*" class="filter-item all-cat selected">All Products</a>
 							
 								{% for category in categories %}
@@ -207,7 +223,7 @@
 										{{ category.name }}
 									</a>
 								{% endfor %}
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -370,5 +386,56 @@
     <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'website/js/jquery.isotope.min.js' %}"></script>
     <script src="{% static 'website/js/scripts.js' %}"></script>
+
+	<script>
+		$(window).on("load", function () {
+			var selectedCategory = "{{ selected_category }}";
+			var $container = $("#projects");
+			var $filterLinks = $("#filters a");
+	
+			if (!$container.length) {
+				return;
+			}
+	
+			var filterValue = "*";
+	
+			if (selectedCategory && selectedCategory !== "all") {
+				filterValue = "." + selectedCategory;
+			}
+	
+			$filterLinks.removeClass("selected");
+	
+			$filterLinks.each(function () {
+				if ($(this).attr("data-filter") === filterValue) {
+					$(this).addClass("selected");
+				}
+			});
+	
+			$container.isotope({
+				itemSelector: ".project-item",
+				filter: filterValue
+			});
+	
+			$filterLinks.off("click").on("click", function (e) {
+				e.preventDefault();
+	
+				var selectedFilter = $(this).attr("data-filter");
+	
+				$filterLinks.removeClass("selected");
+				$(this).addClass("selected");
+	
+				$container.isotope({
+					filter: selectedFilter
+				});
+	
+				if (selectedFilter === "*") {
+					history.replaceState(null, "", "{% url 'products' %}#product-catalog");
+				} else {
+					var categorySlug = selectedFilter.replace(".", "");
+					history.replaceState(null, "", "{% url 'products' %}?category=" + categorySlug + "#product-catalog");
+				}
+			});
+		});
+	</script>
 </body>
 </html>

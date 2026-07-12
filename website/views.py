@@ -1,8 +1,8 @@
+from pathlib import Path
 from django.shortcuts import render
 from django.contrib import messages
 from .models import ContactMessage
 from pathlib import Path
-from django.shortcuts import render
 from django.contrib.staticfiles import finders
 
 
@@ -24,6 +24,76 @@ def partnerclients(request):
 
 
 
+# def products(request):
+#     categories = [
+#         {
+#             "name": "Mechanical & Automation",
+#             "slug": "mechanical",
+#             "folder": "mechanical",
+#         },
+#         {
+#             "name": "Pressure Measurement",
+#             "slug": "pressure",
+#             "folder": "pressure",
+#         },
+#         {
+#             "name": "Temperature Measurement",
+#             "slug": "temperature",
+#             "folder": "temperature",
+#         },
+#         {
+#             "name": "Flow Measurement",
+#             "slug": "flow",
+#             "folder": "flow",
+#         },
+#         {
+#             "name": "Level Measurement",
+#             "slug": "level",
+#             "folder": "level",
+#         },
+        
+        
+#     ]
+
+#     products = []
+    
+#     allowed_extensions = [".webp"]
+
+#     base_static_path = finders.find("website/images/products")
+
+#     if base_static_path:
+#         base_path = Path(base_static_path)
+
+#         for category in categories:
+#             folder_path = base_path / category["folder"]
+
+#             if folder_path.exists():
+#                 for image_file in sorted(folder_path.iterdir()):
+#                     if image_file.suffix.lower() in allowed_extensions:
+#                         product_title = image_file.stem.replace("-", " ").replace("_", " ").title()
+
+#                         products.append({
+#                             "title": product_title,
+#                             "category": category["slug"],
+#                             "category_name": category["name"],
+#                             "image": f"website/images/products/{category['folder']}/{image_file.name}",
+#                             "alt": f"{product_title} - {category['name']}",
+#                         })
+
+#     return render(request, "website/products.html", {
+#         "categories": categories,
+#         "products": products,
+#     })
+
+
+
+
+
+
+
+
+
+
 def products(request):
     categories = [
         {
@@ -37,9 +107,9 @@ def products(request):
             "folder": "pressure",
         },
         {
-            "name": "Temperature Measurement",
-            "slug": "temperature",
-            "folder": "temperature",
+            "name": "Level Measurement",
+            "slug": "level",
+            "folder": "level",
         },
         {
             "name": "Flow Measurement",
@@ -47,17 +117,21 @@ def products(request):
             "folder": "flow",
         },
         {
-            "name": "Level Measurement",
-            "slug": "level",
-            "folder": "level",
+            "name": "Temperature Measurement",
+            "slug": "temperature",
+            "folder": "temperature",
         },
-        
-        
     ]
 
+    selected_category = request.GET.get("category", "all")
+
+    valid_slugs = [category["slug"] for category in categories]
+
+    if selected_category not in valid_slugs:
+        selected_category = "all"
+
     products = []
-    
-    allowed_extensions = [".webp"]
+    allowed_extensions = [".webp", ".jpg", ".jpeg", ".png"]
 
     base_static_path = finders.find("website/images/products")
 
@@ -83,7 +157,10 @@ def products(request):
     return render(request, "website/products.html", {
         "categories": categories,
         "products": products,
+        "selected_category": selected_category,
     })
+
+
 
 
 
