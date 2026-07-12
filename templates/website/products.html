@@ -1,0 +1,374 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Product National Engineering Corporation | Industrial Valves & Instrumentation Supplier</title>
+	<meta name="description" content="Learn about National Engineering Corporation, a trusted supplier of industrial valves, automation products, pneumatic components, instrumentation, gauges, fittings, tubes, and industrial accessories for process industries.">
+	<meta name="keywords" content="National Engineering Corporation, industrial valves supplier, automation products, instrumentation supplier, pneumatics, pressure gauges, fittings, tubing, Ankleshwar, Dahej, Vapi">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.css' %}">
+	<link rel="stylesheet" id="awesome-font-css" href="{% static 'website/css/font-awesome.css' %}" type="text/css" media="all">
+	<link rel="stylesheet" id="ionicon-font-css" href="{% static 'website/css/ionicon.css' %}" type="text/css" media="all">
+	<link rel="stylesheet" id="industris-style-css" href="{% static 'website/css/style.css' %}" type="text/css" media="all">
+
+	<link rel="shortcut icon" href="favicon.png">
+
+	
+</head>
+
+<body>
+	<div id="page" class="site">
+		<div class="collapse searchbar" id="searchbar">
+	        <div class="search-area">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	                        <div class="input-group">
+	                            <input type="text" class="form-control" placeholder="Search for...">
+	                            <span class="input-group-btn">
+	            					<button class="btn btn-primary" type="button">Go!</button>
+	            				</span> 
+	            			</div>
+	                        <!-- /input-group -->
+	                    </div>
+	                    <!-- /.col-lg-6 -->
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <header id="site-header" class="site-header mobile-header-blue header-style-1">
+	        <div id="header_topbar" class="header-topbar md-hidden sm-hidden clearfix">
+	            <div class="container-custom">
+	                <div class="row">
+	                    <div class="col-md-8">
+	                        <!-- Info on Topbar -->
+	                        <ul class="topbar-left">
+	                            <li><i class="icon ion-md-pin"></i>G-23, Silver Plaza, Pratin Chowkdi, Ankleshwar</li>
+	                            <li><i class="icon ion-md-call"></i>+91 9574167304</li>
+	                            <li><i class="icon ion-md-mail"></i>sales.nationaleng@gmail.com</li>
+	                        </ul>
+	                    </div>
+                        <!-- Info on topbar close -->
+	                    <div class="col-md-4">
+	                    	<ul class="topbar-right pull-right">
+		                        <li class="toggle_search topbar-search"><a href="#"><i class="icon ion-md-search"></i></a></li>
+		                        <!-- <li class="topbar-login"><a href="#"> Login </a></li>
+		                        <li class="topbar-languages"><a href="#"> English <i class="icon ion-ios-arrow-down"></i></a></li> -->
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- Top bar close -->
+	        <div class="main-header md-hidden sm-hidden">
+	        	<div class="container-custom">
+	        		<div class="row">
+	        			<div class="col-md-3">
+			        		<div class="logo-brand">
+			        			<a href="{% url 'home' %}"><img src="{% static 'website/images/logo1.png' %}" alt="industris"></a>
+			        		</div>
+			        	</div>
+			        	<div class="col-md-9">
+			        		<div class="main-navigation">
+			        			<ul id="primary-menu" class="menu">
+			        				<li class="menu-item"><a href="{% url 'home' %}">Home</a>
+			        					
+			        				</li>
+			        				<li class="menu-item "><a href="{% url 'about' %}">About Us</a>
+			        					
+			        				</li>
+			        				
+			        				<li class="menu-item "><a href="{% url 'partner-clients' %}">Clients</a>
+										
+			        				</li>
+			        				<li class="menu-item  current-menu-ancestor current-menu-parent"><a href="{% url 'products' %}">Products</a>
+										
+			        					<!-- <ul class="sub-menu">
+			        						<li class="menu-item"><a href="news.html">News 1</a></li>
+			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
+			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
+			        					</ul> -->
+			        				</li>
+
+			        				<li class="menu-item "><a href="{% url 'contactus' %}">Contact Us</a>
+			        				</li>
+			        			</ul>
+		        				<a href="#" class="btn btn-primary">Get a quote<i class="icon ion-md-paper-plane"></i></a>
+			        		</div>
+			        	</div>
+		        	</div>
+	        	</div>
+	        </div>
+	        <!-- Main header start -->
+	        
+	        <!-- Mobile header start -->
+	        <div class="mobile-header">
+	        	<div class="container-custom">
+	        		<div class="row">
+	        			<div class="col-xs-6">
+			        		<div class="logo-brand-mobile">
+			        			<a href="{% url 'home' %}"><img src="{% static 'website/images/logo1.png' %}" alt="industris"></a>
+			        		</div>
+			        	</div>
+	        			<div class="col-xs-6">
+			        		<div id="mmenu_toggle">
+			                    <button></button>
+			                </div>
+			        	</div>
+			        	<div class="col-xs-12">
+			        		<div class="mobile-nav">
+			        			<ul id="primary-menu-mobile" class="mobile-menu">
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'home' %}">Home</a>
+			        					
+			        				</li>
+			        				<li class="menu-item current-menu-ancestor current-menu-parent"><a href="{% url 'about' %}">About Us</a>
+			        				
+			        				</li>
+			        				
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'partner-clients' %}">Clients</a>
+			        					
+			        				</li>
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'products' %}">Products</a>
+										
+			        					<!-- <ul class="sub-menu">
+			        						<li class="menu-item"><a href="news.html">News 1</a></li>
+			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
+			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
+			        					</ul> -->
+			        				</li>
+
+			        				<li class="menu-item"><a href="{% url 'contactus' %}">Contact Us</a>
+			        					
+			        				</li>
+			        			</ul>
+		        				<a href="#" class="btn btn-primary">Get a quote<i class="icon ion-md-paper-plane"></i></a>
+			        		</div>
+			        	</div>
+		        	</div>
+	        	</div>
+	        </div>
+	    </header>
+        <!-- Mobile header start -->
+
+		<div id="content" class="site-content">
+			<div class="page-header" style="background: url('{% static 'website/images/banner/product-banner.png' %}') no-repeat center center;">
+			    <div class="container">
+			        <div class="breadc-box no-line">
+			            <div class="row">
+			                <div class="col-md-12">
+			                    <h2 class="page-title">Products</h2>
+			                    <ul id="breadcrumbs" class="breadcrumbs none-style">
+			                        <li><a href="{% url 'home' %}">Home</a></li>
+			                        <li class="active">Products</li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="text-primary">EXPLORE</h4>
+							<h2>Our Products</h2>
+							<br>
+						</div>
+					</div>
+				</div>
+
+				
+
+				<div class="project-filter" data-column="4">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+
+							<!-- <div id="filters" class="cat-filter">
+								<a href="#" data-filter="*" class="filter-item all-cat selected">All products</a>
+								<a href="#" data-filter=".construction" class="filter-item ">Pressure Measurement</a>
+								<a href="#" data-filter=".energy" class="filter-item">Level Measurement</a>
+								<a href="#" data-filter=".engineering" class="filter-item">Flow Measurement</a>
+								<a href="#" data-filter=".petroleum" class="filter-item">Temperature Measurement</a>
+							</div> -->
+							
+
+							<div id="filters" class="cat-filter">
+								<a href="#" data-filter="*" class="filter-item all-cat selected">All Products</a>
+							
+								{% for category in categories %}
+									<a href="#" data-filter=".{{ category.slug }}" class="filter-item">
+										{{ category.name }}
+									</a>
+								{% endfor %}
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+					<div id="projects" class="project-grid-2 projects">
+
+						{% for product in products %}
+							<div class="project-item {{ product.category }} col-lg-3 col-md-4 col-sm-6 no-padding">
+								<div class="inner">
+									<!-- <img src="{% static product.image %}" alt="{{ product.alt }}"> -->
+									<img 
+										src="{% static product.image %}" 
+										alt="{{ product.alt }}" 
+									>
+
+									<div class="project-info">
+										<div class="project-meta">{{ product.category_name }}</div>
+
+										<div class="project-content">
+											<h3>
+												<a href="#">{{ product.title }}</a>
+											</h3>
+
+											<p>{{ product.category_name }} product for industrial applications.</p>
+
+											<a href="{% url 'contactus' %}">
+												Enquire Now <i class="icon ion-md-add-circle"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						{% empty %}
+							<div class="container">
+								<p>No products found. Please check the product image folders.</p>
+							</div>
+						{% endfor %}
+
+					</div>
+				</div>
+			</section>
+
+		</div>
+	    
+
+	    <footer id="site-footer" class="site-footer bg-footer">
+	        <div class="main-footer">
+	            <div class="container-custom">
+	                <div class="row">
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="media_image-1" class="widget widget_media_image">
+									<a href="{% url 'home' %}" class="footer-logo-link">
+										<img class="footer-logo-img" src="{% static 'website/images/logo-white-p.png' %}" alt="National Engineering Corporation">
+									</a>
+		                        </div>
+		                        <div id="custom_html-1" class="widget_text widget widget_custom_html">
+		                            <div class="textwidget custom-html-widget">
+		                                <p>© National Engineering Corporation. <br>All Rights Reserved.</p>
+										<p>GST No.: 24AZKPK0811G1ZR</p>
+		                            </div>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="custom_html-2" class="widget_text widget widget_custom_html padding-left">
+		                            <div class="textwidget custom-html-widget">
+		                                <ul>
+		                                    <li><a href="{% url 'products' %}">Industrial Valves</a></li>
+											<li><a href="{% url 'products' %}">Automation Products</a></li>
+											<li><a href="{% url 'products' %}">Instrumentation</a></li>
+											<li><a href="{% url 'products' %}">Pneumatics</a></li>
+											<li><a href="{% url 'products' %}">Fittings & Tubing</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+	                        </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="custom_html-3" class="widget_text widge widget-footer widget_custom_html padding-left">
+		                            <div class="textwidget custom-html-widget">
+		                                <ul>
+		                                    <li><a href="{% url 'about' %}">About Us</a></li>
+									
+											<li><a href="{% url 'partner-clients' %}">Clients</a></li>
+											<li><a href="{% url 'products' %}">Products</a></li>
+											<li><a href="{% url 'contactus' %}">Contact Us</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget">
+		                            <!-- Mailchimp for WordPress v4.5.2 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+		                            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1696" method="post" data-id="1696" data-name="Industris Subscribe">
+	                                    <div class="input-group">
+	                                        <input type="email" name="EMAIL" class="form-control" placeholder="Email Address" required="">
+	                                        <span class="input-group-btn">
+	                                        	<button type="submit" class="btn btn-subcribe"><i class="icon ion-md-checkmark"></i></button>
+	                                        </span>
+	                                    </div>
+		                                <input type="hidden" name="_mc4wp_timestamp" value="1560227031">
+		                                <input type="hidden" name="_mc4wp_form_id" value="1696">
+		                                <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+		                                <div class="mc4wp-response"></div>
+		                            </form>
+		                        </div>
+	                            <!-- / Mailchimp for WordPress Plugin -->
+
+	                            <div class="footer-social ot-socials bg-white">
+	                            	follow us:
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-facebook"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-instagram"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-skype"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-twitter"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-youtube"></i></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                </div>
+	            </div>
+	        </div>
+	        <!-- .main-footer -->
+	        <div class="footer-bottom">
+	            <div class="container-custom">
+	            	<div class="row">
+	            		<div class="col-md-12">
+		                    <ul class="topbar-left">
+		                        <li><i class="icon ion-md-pin"></i>Forusbeen 50, 4035 Stavanger, Norway</li>
+		                        <li><i class="icon ion-md-call"></i>+84 0378 260 852</li>
+		                        <li><i class="icon ion-md-mail"></i>info.industris@gmail.com</li>
+		                    </ul>
+			        		<a id="back-to-top" href="#" class="btn btn-back-to-top show pull-right">Back to top<i class="icon ion-ios-arrow-dropup-circle"></i></a>
+			        	</div>
+			        </div>
+	            </div>
+	        </div>
+	        <!-- .copyright-footer -->
+	    </footer>
+	</div>
+
+	<script src="{% static 'website/js/jquery.min.js' %}"></script>
+    <script src="{% static 'website/js/slick.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'website/js/countto.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'website/js/scripts.js' %}"></script>
+</body>
+</html>

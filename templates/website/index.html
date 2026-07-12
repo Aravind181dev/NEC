@@ -1,0 +1,1081 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>National Engineering Corporation | Industrial Valves, Automation & Instrumentation</title>
+	<meta name="description" content="National Engineering Corporation supplies industrial valves, automation products, pneumatic components, instrumentation, gauges, fittings, tubes, and accessories for chemical, pharmaceutical, engineering, textile, water treatment, and manufacturing industries.">
+	<meta name="keywords" content="industrial valves, automation products, instrumentation, pneumatics, pressure gauges, flow meters, ball valves, butterfly valves, pneumatic valves, Ankleshwar, Dahej, Vapi">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/ionicon.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+    <link rel="shortcut icon" href="{% static 'website/images/favicon.png' %}">
+
+</head>
+
+<body>
+	<div id="page" class="site">
+		<div class="collapse searchbar" id="searchbar">
+	        <div class="search-area">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	                        <div class="input-group">
+	                            <input type="text" class="form-control" placeholder="Search for...">
+	                            <span class="input-group-btn">
+	            					<button class="btn btn-primary" type="button">Go!</button>
+	            				</span> 
+	            			</div>
+	                      
+	                    </div>
+	                   
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <header id="site-header-2" class="site-header-2 header-style-1 md-hidden sm-hidden">
+	    	<div class="container-custom">
+	    		<div class="top-header-2">
+	                <div class="logo-brand">
+	        			<a href="{% url 'home' %}">
+							<img class="site-logo-img" src="{% static 'website/images/logo1.png' %}" alt="National Engineering Corporation">
+						</a>
+	        		</div>
+	        		<div class="header-info-2">
+	        			<ul>
+	                        <li><i class="icon ion-md-pin"></i>Gf-23, Silver Plaza, Pratin Chowkdi, Ankleshwar</li>
+							<li><i class="icon ion-md-call"></i>+91 95741 67304</li>
+							<li><i class="icon ion-md-mail"></i>sales.nationaleng@gmail.com</li>
+	                    </ul>
+	        		</div>
+	                <div class="toggle_search topbar-search"><a href="#"><i class="icon ion-md-search"></i></a></div>
+					<div class="header-btn-2"><a href="{% url 'contactus' %}" class="btn btn-primary">Get a Quote<i class="icon ion-md-paper-plane"></i></a></div>
+				</div>
+            </div>
+
+            <div class="navigation-2">
+	        	<div class="container-custom">
+		            <div class="main-navigation navigation-style-2">
+		    			<ul id="primary-menu" class="menu">
+		    				<li class="menu-item  current-menu-ancestor current-menu-parent"><a href="{% url 'home' %}">Home</a>
+		    					
+		    				</li>
+		    				<li class="menu-item "><a href="{% url 'about' %}">About Us</a>
+		    					
+		    				</li>
+		    				
+		    				<li class="menu-item"><a href="{% url 'partner-clients' %}">Clients</a>
+		    					
+		    				</li>
+
+
+							<li class="menu-item"><a href="{% url 'products' %}">Products</a>
+								<!-- <ul class="sub-menu">
+									<li class="menu-item menu-item-has-children"><a href="shop.html">Shop</a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="shop.html">Shop</a></li>
+											<li class="menu-item"><a href="shop-detail.html">Shop Detail</a></li>
+											<li class="menu-item"><a href="cart.html">Cart</a></li>
+											<li class="menu-item"><a href="checkout.html">Checkout</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="faq.html">FAQ's</a></li>
+									<li class="menu-item"><a href="gallery.html">Gallery</a></li>
+									<li class="menu-item"><a href="404-page.html">404 Pages</a></li>
+									<li class="menu-item"><a href="comming-soon.html">Comming Soon</a></li>
+									<li class="menu-item"><a href="login.html">Login</a></li>
+									<li class="menu-item"><a href="typography.html">Typography</a></li>
+								</ul> -->
+							</li>
+
+
+		    				<li class="menu-item"><a href="{% url 'contactus' %}">Contact Us</a>
+		    					
+		    				</li>
+		    			</ul>
+		    		</div>
+		    	</div>
+		    </div>
+	    </header>
+
+
+
+
+
+
+	    <header id="site-header" class="site-header header-style-1">
+	        <!-- Mobile header start -->
+	        <div class="mobile-header">
+	        	<div class="container-custom">
+	        		<div class="row">
+	        			<div class="col-xs-6">
+			        		<div class="logo-brand-mobile logo-brand-mobile-2">
+			        			<a href="{% url 'home' %}">
+									<img class="site-logo-img mobile-site-logo" src="{% static 'website/images/logo1.png' %}" alt="National Engineering Corporation">
+								</a>
+			        		</div>
+			        	</div>
+	        			<div class="col-xs-6">
+			        		<div id="mmenu_toggle">
+			                    <button></button>
+			                </div>
+			        	</div>
+			        	<div class="col-xs-12">
+			        		<div class="mobile-nav">
+			        			<ul id="primary-menu-mobile" class="mobile-menu">
+			        				<li class="menu-item current-menu-ancestor current-menu-parent"><a href="{% url 'home' %}">Home</a>
+			        					
+			        				</li>
+			        				<li class="menu-item"><a href="{% url 'about' %}">About Us</a>
+			        					
+			        				</li>
+			        				
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'partner-clients' %}">Clients</a>
+			        					
+			        				</li>
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'products' %}">Products</a>
+			        					<!-- <ul class="sub-menu">
+			        						<li class="menu-item"><a href="news.html">News 1</a></li>
+			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
+			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
+			        					</ul> -->
+			        				</li>
+
+
+			        				<li class="menu-item"><a href="{% url 'contactus' %}">Contact Us</a>
+			        					
+			        				</li>
+			        			</ul>
+			        		</div>
+			        	</div>
+		        	</div>
+	        	</div>
+	        </div>
+	    </header>
+        <!-- Mobile header start -->
+
+		<div class="slider" data-show="1" data-arrow="true">
+
+			<div>
+				<div class="slider-item">
+					<img src="{% static 'website/images/herosec-1.png' %}" alt="Industrial valves automation and instrumentation solutions" draggable="false">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="slider-content">
+									<!-- <h4>WELCOME TO INDUSTRIS...!</h4>
+									<h1>Over 20 years <br> in the Oil & Gas industry </h1>
+									<a class="btn btn-primary" href="#">Explore now</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="slider-item">
+					<img src="{% static 'website/images/herosec-2.png' %}" alt="Industrial valves automation and instrumentation solutions" draggable="false">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="slider-content">
+									<!-- <h4>WELCOME TO INDUSTRIS...!</h4>
+									<h1>Leader in power Automation </h1>
+									<a class="btn btn-primary" href="#">Explore now</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div>
+				<div class="slider-item">
+					<img src="{% static 'website/images/herosec-3.png' %}" alt="industris tempalate" draggable="false">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="slider-content">
+									<h4>WELCOME TO INDUSTRIS...!</h4>
+									<h1>Best solution for Industrial &amp; Factories </h1>
+									<a class="btn btn-primary" href="#">Explore now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div>
+				<div class="slider-item">
+					<img src="{% static 'website/images/herosec-3.png' %}" alt="Industrial valves automation and instrumentation solutions"" draggable="false">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="slider-content">
+									<!-- <h4>WELCOME TO INDUSTRIS...!</h4>
+									<h1>Best solution for Industrial &amp; Factories </h1>
+									<a class="btn btn-primary" href="#">Explore now</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- <section class="wwd-section-final" style="background-color: #014d97; background-image: url('{% static 'website/images/blur.jpg' %}');">
+			<div class="container">
+				<div class="row wwd-final-row">
+		
+					<div class="col-md-6 col-sm-12">
+						<div class="wwd-final-text">
+							<h4 class="text-primary">Our Expertise</h4>
+							<h2 class="text-white">What We Do</h2>
+							<p class="text-white">
+								National Engineering Corporation supplies industrial valves, automation products,
+								pneumatic components, instrumentation, gauges, fittings, tubes, and accessories
+								for reliable industrial operations.
+							</p>
+						</div>
+					</div>
+		
+					<div class="col-md-6 col-sm-12">
+						<div class="wwd-final-grid">
+		
+							<a href="{% url 'products' %}" class="wwd-final-img">
+								<img src="{% static 'website/images/wwd/wwd-1.png' %}" alt="Pressure Measurement">
+							</a>
+		
+							<a href="{% url 'products' %}" class="wwd-final-img">
+								<img src="{% static 'website/images/wwd/wwd-2.png' %}" alt="Level Measurement">
+							</a>
+		
+							<a href="{% url 'products' %}" class="wwd-final-img">
+								<img src="{% static 'website/images/wwd/wwd-3.png' %}" alt="Flow Measurement">
+							</a>
+		
+							<a href="{% url 'products' %}" class="wwd-final-img">
+								<img src="{% static 'website/images/wwd/wwd-4.png' %}" alt="Temperature Measurement">
+							</a>
+		
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</section> -->
+
+
+
+		<section style="background-color: #014d97; background-image: url('{% static 'website/images/blur.jpg' %}');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<h4 class="text-primary">Our Expertise</h4>
+						<h2 class="text-white">What We Do</h2>
+						<p class="text-white mb-sm-40">
+						National Engineering Corporation supplies industrial valves, automation products, pneumatic components, instrumentation, gauges, fittings, tubes, and accessories for reliable industrial operations.
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box-3">
+							<div class="services-content">
+								<h4><a href="{% url 'products' %}">Pressure Measurement</a></h4>
+								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+							</div>
+							<div class="services-icon">
+								<img src="{% static 'website/images/iconimg/icon-img1.png' %}" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-md-3 col-sm-6">
+						<a href="{% url 'products' %}">
+							<img src="{% static 'website/images/wwd/wwd-1.png' %}" 
+								 alt="Industrial Valves" 
+								 class="service-only-img">
+						</a>
+					</div> -->
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box-3">
+							<div class="services-content">
+								<h4><a href="{% url 'products' %}">Level Measurement</a></h4>
+								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+							</div>
+							<div class="services-icon">
+								<img src="{% static 'website/images/iconimg/icon-img2.png' %}" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<!-- <div class="services-box-3 no-margin-md-bottom">
+							<div class="services-content">
+								<h4><a href="services-detail.html">Instrumentation Products</a></h4>
+								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+							</div>
+							<div class="services-icon">
+								<img src="{% static 'website/images/iconimg/icon-img3.png' %}" alt="">
+							</div>
+						</div> -->
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<!-- <div class="services-box-3 no-margin-md-bottom">
+							<div class="services-content">
+								<h4><a href="services-detail.html">Pneumatic Products</a></h4>
+								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+							</div>
+							<div class="services-icon">
+								<img src="{% static 'website/images/iconimg/icon-img4.png' %}" alt="">
+							</div>
+						</div> -->
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box-3 no-margin-md-bottom">
+							<div class="services-content">
+								<h4><a href="{% url 'products' %}">Flow Measurement</a></h4>
+								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+							</div>
+							<div class="services-icon">
+								<img src="{% static 'website/images/iconimg/icon-img5.png' %}" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box-3 no-margin-md-bottom">
+							<div class="services-content">
+								<h4><a href="{% url 'products' %}">Temp Measurement</a></h4>
+								<a class="view-detail" href="#"><i class="no-margin-left icon ion-md-add-circle-outline"></i></a>
+							</div>
+							<div class="services-icon">
+								<img src="{% static 'website/images/iconimg/icon-img6.png' %}" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="home-about">
+							<h4 class="text-primary">ABOUT US</h4>
+							<h2>Reliable Industrial Engineering Product Supplier</h2>
+							<p>National Engineering Corporation is a trusted supplier of industrial valves, automation products, pneumatic components, instrumentation, gauges, fittings, tubes, and industrial accessories. We provide products suitable for air, water, steam, oil, gas, chemicals, and process applications. <a class="text-white" href="#"> Read more</a></p>
+							<img src="images/sign.png" alt="">
+							<div class="row">
+								<div class="col-md-offset-1 col-md-11 no-padding-md-left">
+									<div class="about-author">
+										<div class="about-author-info">
+											<h4><strong>Shoaib kapa</strong></h4>
+											<p>Founder</p>
+										</div>
+										<div class="about-author-media">
+											<a href="#"><i class="icon ion-logo-linkedin"></i></a>
+											<a href="#"><i class="icon ion-logo-twitter"></i></a>
+											<a href="#"><i class="icon ion-logo-skype"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="industris-space-sm"></div>
+						<div class="industris-space-sm"></div>
+					</div>
+					<div class="col-md-offset-1 col-md-5 col-sm-12 sm-center">
+						<div class="about-img-right">
+							<img src="{% static 'website/images/abimg.png' %}" alt="National Engineering Corporation">
+							<div class="about-img-small">
+								<div class="overlay"><img src="{% static 'website/images/round-office.png' %}" class="circle-img" alt=""></div>
+									<div class="about-content">
+									<h2 class="text-primary">24+</h2>
+									<p class="text-white">Years of Experience</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+		    <div class="container">
+			    <div class="industris-space-60 sm-hidden"></div>
+			    <div class="industris-space-20"></div>
+			    <hr>
+			    <div class="industris-space"></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+                        <div class="partner-slider image-carousel text-center" data-show="5" data-arrow="false">
+
+                            <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="{% static 'website/images/distributers/baumer.png' %}" alt="baumer">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					        <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="{% static 'website/images/distributers/festo.png' %}" alt="festo">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					        <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="{% static 'website/images/distributers/honeywell.png' %}" alt="honeywell">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					        <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="{% static 'website/images/distributers/rotex.png' %}" alt="rotex">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					        <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="{% static 'website/images/distributers/Uflow.png' %}" alt="Uflow">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					       
+
+					        <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="{% static 'website/images/distributers/x2.png' %}" alt="x2">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					        <!-- <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="https://via.placeholder.com/200x90.png" alt="">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					        <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="https://via.placeholder.com/200x90.png" alt="">
+				                        </div>
+					                </div>
+					            </div>
+					        </div>
+
+					        <div>
+					            <div class="partner-item text-center clearfix">
+					                <div class="inner">
+				                        <div class="thumb">
+				                            <img src="https://via.placeholder.com/200x90.png" alt="">
+				                        </div>
+					                </div>
+					            </div>
+					        </div> -->
+
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="industris-space"></div>
+			<div class="industris-space-60"></div>
+			<div class="container">
+				<div class="row flex-row">
+
+				<div class="col-md-6 col-xs-12 mb-sm-40">
+					<div class="section-video-3">
+						<div class="home-video-3 video-player"
+							style="
+								background-image: url('{% static 'website/images/thumbnail.png' %}');
+								background-size: cover;
+								background-position: center;
+								background-repeat: no-repeat;
+								width: 487px;
+								height: 488px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+							">
+							<a class="video-play" href="{% static 'website/video/product_video.mp4' %}">
+								<i class="icon ion-md-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+					<!-- <div class="col-md-6 col-xs-12 mb-sm-40">
+						<div class="section-video-3">
+							<div class="home-video-3 video-player">
+								<a class="video-play" href="{% static 'website/video/product-video.mp4' %}"><i class="icon ion-md-play"></i></a>
+							</div>
+							<div class="home-video-3 video-player">
+								<a class="video-play" href="{% static 'website/video/product_video.mp4' %}" target="_blank">
+									<i class="icon ion-md-play"></i>
+								</a>
+							</div>
+
+							<div class="home-video-3 video-player" 
+								style="background-image: url('{% static 'website/images/thumbnail.png' %}');">
+								<a class="video-play" href="{% static 'website/video/product_video.mp4' %}">
+									<i class="icon ion-md-play"></i>
+								</a>
+							</div>
+						</div>
+					</div> -->
+					<div class="col-md-6 col-xs-12">
+						<h4 class="text-primary">WHY CHOOSE US</h4>
+						<h3>Why Choose National Engineering Corporation?</h3>
+						<p>We provide a wide range of industrial engineering products with dependable supply, practical support, and solutions for different process industries.</p>
+						<ul class="unstyle no-margin-bottom">
+							<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Wide product range</a></li>
+							<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Industrial application knowledge</a></li>
+							<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Products for air, water, steam, oil, gas and chemicals</a></li>
+							<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Multiple location support in Gujarat industrial areas</a></li>
+						</ul>
+						<div class="industris-space-30"></div>
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="counter-box">
+									<div class="counter-icon">
+										<i class="icon ion-md-ribbon"></i>
+									</div>
+									<h4>Product Range</h4>
+									<h3><span class="number" data-to="100" data-speed="2000">0</span><span>+</span></h3>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="counter-box">
+									<div class="counter-icon">
+										<i class="icon ion-ios-briefcase"></i>
+									</div>
+									<h4>Clients Served</h4>
+									<h3><span class="number" data-to="50" data-speed="2000">0</span><span>+</span></h3>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="counter-box">
+									<div class="counter-icon">
+										<i class="icon ion-ios-contacts"></i>
+									</div>
+									<h4>Locations</h4>
+									<h3><span class="number" data-to="3" data-speed="2000">0</span><span>+</span></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section style="background-color: #014d97;">
+			<div class="container">
+				<div class="row flex-row">
+					<div class="col-md-8">
+						<h4 class="text-primary">PRODUCT RANGE</h4>
+						<h2 class="text-white no-margin-bottom">Our Industrial Product Categories</h2>
+					</div>
+					<div class="col-md-4 align-self-end text-right">
+						<a class="text-white industris-lineheight" href="{% url 'products' %}">View all post<i class="icon ion-md-add-circle-outline"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="industris-space-50"></div>
+			<div class="product-carousel-wrap">
+				<button class="product-nav product-prev" type="button" aria-label="Previous product">
+					<i class="icon ion-ios-arrow-back"></i>
+				</button>
+			
+				<div class="projects projects-list product-range-carousel" id="productRangeCarousel">
+			
+					<div class="project-item construction col-lg-3 col-md-4 col-sm-6 no-padding">
+						<div class="inner">
+							<img src="{% static 'website/images/productrange/ma.png' %}" alt=""> 
+							<div class="project-info">
+								<div class="project-meta">Mechanical valves and automation solutions</div>
+								<div class="project-content">
+									<h3><a href="{% url 'products' %}">Mechanical valves and automation solutions</a></h3>
+									<p>Ball valves, gate valves, globe valves, butterfly valves, non-return valves, diaphragm valves, safety valves, strainers, and steam traps.</p>
+									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="project-item construction col-lg-3 col-md-4 col-sm-6 no-padding">
+						<div class="inner">
+							<img src="{% static 'website/images/productrange/pm.png' %}" alt=""> 
+							<div class="project-info">
+								<div class="project-meta">Industrial Products</div>
+								<div class="project-content">
+									<h3><a href="{% url 'products' %}">Industrial Valves</a></h3>
+									<p>Ball valves, gate valves, globe valves, butterfly valves, non-return valves, diaphragm valves, safety valves, strainers, and steam traps.</p>
+									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="project-item energy col-lg-3 col-md-4 col-sm-6 no-padding">
+						<div class="inner">
+							<img src="{% static 'website/images/productrange/lm.png' %}" alt=""> 
+							<div class="project-info">
+								<div class="project-meta">Industrial Products</div>
+								<div class="project-content">
+									<h3><a href="{% url 'products' %}">Automation Products</a></h3>
+									<p>Pneumatic butterfly valves, motorised butterfly valves, pneumatic ball valves, motorised ball valves, control valves, solenoid valves, and automation accessories.</p>
+									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="project-item engineering col-lg-3 col-md-4 col-sm-6 no-padding">
+						<div class="inner">
+							<img src="{% static 'website/images/productrange/fm.png' %}" alt=""> 
+							<div class="project-info">
+								<div class="project-meta">Industrial Products</div>
+								<div class="project-content">
+									<h3><a href="{% url 'products' %}">Instrumentation</a></h3>
+									<p>Pressure gauges, temperature gauges, diaphragm seal gauges, flow meters, pressure transmitters, pressure switches, RTDs, thermowells, and level switches.</p>
+									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="project-item petroleum col-lg-3 col-md-4 col-sm-6 no-padding">
+						<div class="inner">
+							<img src="{% static 'website/images/productrange/tm.png' %}" alt=""> 
+							<div class="project-info">
+								<div class="project-meta">Industrial Products</div>
+								<div class="project-content">
+									<h3><a href="{% url 'products' %}">Pneumatics</a></h3>
+									<p>Pneumatic cylinders, air filter regulator units, air pressure regulators, air combination units, solenoid valves, air blow guns, push-in fittings, and pneumatic accessories.</p>
+									<a href="{% url 'products' %}">View products <i class="icon ion-md-add-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+				</div>
+			
+				<button class="product-nav product-next" type="button" aria-label="Next product">
+					<i class="icon ion-ios-arrow-forward"></i>
+				</button>
+			</div>
+
+		    <div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h3 class="text-white">Our Supply Process</h3>
+					</div>
+					<div class="col-md-9">
+						<p class="text-white border-left">
+							We help customers select the right industrial products based on application, specifications, media, pressure, temperature, and site requirements.
+						</p>
+					</div>
+				</div>
+				<div class="industris-space"></div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="process process-light">
+							<div class="process-icon"><i class="icon ion-ios-briefcase"></i></div>
+							<h4>Understand<br> Requirement</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="process process-light">
+							<div class="process-icon"><i class="icon ion-md-football"></i></div>
+							<h4>Suggest Right<br> Product</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="process process-light">
+							<div class="process-icon"><i class="icon ion-ios-rocket"></i></div>
+							<h4>Supply Quality<br> Materials</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="process process-light">
+							<div class="process-icon"><i class="icon ion-ios-filing"></i></div>
+							<h4>Support After<br> Delivery</h4>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+		</section>
+
+		<!-- <section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="text-primary">INDUSTRIES</h4>
+						<h2>Industries We Serve</h2>
+
+						<div class="testi-slider" data-show="2" data-arrow="true">
+
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<p>“I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”</p>
+									</div>
+									<div class="testi-info">
+										<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+										<h4>Emilia Clarke<span>Manager Avenger company</span></h4>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<p>"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I should be incapable of drawing a single stroke."</p>
+									</div>
+									<div class="testi-info">
+										<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+										<h4>Micheal Sejuro<span>Manager Fusion themes company</span></h4>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<p>"I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I should be incapable of drawing a single stroke."</p>
+									</div>
+									<div class="testi-info">
+										<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+										<h4>Emilia Clarke<span>Manager Avenger company</span></h4>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<p>"I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. I should be incapable of drawing a single stroke."</p>
+									</div>
+									<div class="testi-info">
+										<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+										<h4>Micheal Sejuro<span>Manager Fusion themes company</span></h4>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="text-primary">INDUSTRIES</h4>
+						<h2>Industries We Serve</h2>
+		
+						<div class="testi-slider" data-show="2" data-arrow="true">
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Chemical Industries</h4>
+										<p>We supply valves, gauges, instruments, fittings, and automation products for chemical processing and industrial plant applications.</p>
+									</div>
+								</div>
+							</div>
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Pharmaceutical Industries</h4>
+										<p>Our product range supports pharma plants with valves, pneumatic products, instrumentation, and process control accessories.</p>
+									</div>
+								</div>
+							</div>
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Engineering Industries</h4>
+										<p>We provide industrial valves, cylinders, fittings, tubes, and utility products for engineering and manufacturing operations.</p>
+									</div>
+								</div>
+							</div>
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Textile Industries</h4>
+										<p>We support textile industries with steam, air, water, and utility line products including valves, gauges, traps, and fittings.</p>
+									</div>
+								</div>
+							</div>
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Water Treatment Plants</h4>
+										<p>Our valves, flow meters, pressure gauges, strainers, and instrumentation products are suitable for water and treatment applications.</p>
+									</div>
+								</div>
+							</div>
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Food & Process Industries</h4>
+										<p>We supply process valves, pneumatic products, gauges, and control products for industrial process and utility systems.</p>
+									</div>
+								</div>
+							</div>
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Oil, Gas & Utility Applications</h4>
+										<p>Our range includes valves, gauges, transmitters, tubes, fittings, and accessories for oil, gas, steam, air, and utility lines.</p>
+									</div>
+								</div>
+							</div>
+		
+							<div>
+								<div class="testi-box">
+									<div class="testi-content">
+										<h4>Manufacturing Units</h4>
+										<p>We help manufacturing units with reliable products for flow control, pressure monitoring, automation, and pneumatic applications.</p>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="no-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="cta-box" style="background-image: url('{% static 'website/images/blue.jpg' %}');">
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Need Industrial Valves, Instruments or Pneumatic Products?</h3>
+									<p>
+									Contact National Engineering Corporation for product inquiries, specifications, and supply support.
+									</p>
+								</div>
+								<div class="col-md-6 align-self-center text-right">
+									<a href="{% url 'products' %}" class="btn btn-border-white">View Products</a>
+									<a href="{% url 'contactus' %}" class="btn btn-primary">Contact Us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	    
+
+	    <footer id="site-footer" class="site-footer site-footer-h3 bg-footer">
+	        <div class="main-footer main-footer-h3">
+	            <div class="container-custom">
+	                <div class="row">
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="media_image-1" class="widget widget_media_image">
+									<a href="{% url 'home' %}" class="footer-logo-link">
+										<img class="footer-logo-img" src="{% static 'website/images/logo-white-p.png' %}" alt="National Engineering Corporation">
+									</a>
+		                        </div>
+		                        <div id="custom_html-1" class="widget_text widget widget_custom_html">
+		                            <div class="textwidget custom-html-widget">
+		                                <p>© National Engineering Corporation. <br>All Rights Reserved.</p>
+										<p>GST No.: 24AZKPK0811G1ZR</p>
+		                            </div>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="custom_html-2" class="widget_text widget widget_custom_html padding-left">
+		                            <div class="textwidget custom-html-widget">
+		                                <ul>
+		                                    <li><a href="{% url 'products' %}">Industrial Valves</a></li>
+											<li><a href="{% url 'products' %}">Automation Products</a></li>
+											<li><a href="{% url 'products' %}">Instrumentation</a></li>
+											<li><a href="{% url 'products' %}">Pneumatics</a></li>
+											<li><a href="{% url 'products' %}">Fittings & Tubing</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+	                        </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="custom_html-3" class="widget_text widge widget-footer widget_custom_html padding-left">
+		                            <div class="textwidget custom-html-widget">
+		                                <ul>
+		                                    <li><a href="{% url 'about' %}">About Us</a></li>
+									
+											<li><a href="{% url 'partner-clients' %}">Clients</a></li>
+											<li><a href="{% url 'products' %}">Products</a></li>
+											<li><a href="{% url 'contactus' %}">Contact Us</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget">
+		                            <!-- Mailchimp for WordPress v4.5.2 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+		                            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1696" method="post" data-id="1696" data-name="Industris Subscribe">
+	                                    <div class="input-group">
+	                                        <input type="email" name="EMAIL" class="form-control" placeholder="Email Address" required="">
+	                                        <span class="input-group-btn">
+	                                        	<button type="submit" class="btn btn-subcribe"><i class="icon ion-md-checkmark"></i></button>
+	                                        </span>
+	                                    </div>
+		                                <input type="hidden" name="_mc4wp_timestamp" value="1560227031">
+		                                <input type="hidden" name="_mc4wp_form_id" value="1696">
+		                                <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+		                                <div class="mc4wp-response"></div>
+		                            </form>
+		                        </div>
+	                            <!-- / Mailchimp for WordPress Plugin -->
+
+	                            <div class="footer-social ot-socials bg-white">
+	                            	follow us:
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-facebook"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-instagram"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-skype"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-twitter"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-youtube"></i></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                </div>
+	            </div>
+	        </div>
+	        <!-- .main-footer -->
+	        <div class="footer-bottom footer-bottom-h3">
+	            <div class="container-custom">
+	            	<div class="row">
+	            		<div class="col-md-12">
+		                    <ul class="topbar-left">
+		                        <li><i class="icon ion-md-pin"></i>Gf-115, Omkar 2 Complex, Station Road, ANKLESHWAR</li>
+		                        <li><i class="icon ion-md-call"></i>+91 9722552261, +91 7046185101</li>
+		                        <li><i class="icon ion-md-mail"></i>sales.nationaleng@gmail.com</li>
+		                    </ul>
+			        		<a id="back-to-top" href="#" class="btn btn-back-to-top show pull-right">Back to top<i class="icon ion-ios-arrow-dropup-circle"></i></a>
+			        	</div>
+			        </div>
+	            </div>
+	        </div>
+	        <!-- .copyright-footer -->
+	    </footer>
+	</div>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const carousel = document.getElementById("productRangeCarousel");
+			const prevBtn = document.querySelector(".product-prev");
+			const nextBtn = document.querySelector(".product-next");
+	
+			if (carousel && prevBtn && nextBtn) {
+				nextBtn.addEventListener("click", function () {
+					const card = carousel.querySelector(".project-item");
+					const cardWidth = card.offsetWidth;
+	
+					carousel.scrollBy({
+						left: cardWidth,
+						behavior: "smooth"
+					});
+				});
+	
+				prevBtn.addEventListener("click", function () {
+					const card = carousel.querySelector(".project-item");
+					const cardWidth = card.offsetWidth;
+	
+					carousel.scrollBy({
+						left: -cardWidth,
+						behavior: "smooth"
+					});
+				});
+			}
+		});
+	</script>
+
+
+	<script src="{% static 'website/js/jquery.min.js' %}"></script>
+    <script src="{% static 'website/js/slick.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'website/js/countto.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'website/js/scripts.js' %}"></script>
+</body>
+</html>

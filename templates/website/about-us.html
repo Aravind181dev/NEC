@@ -1,0 +1,676 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>About National Engineering Corporation | Industrial Valves & Instrumentation Supplier</title>
+	<meta name="description" content="Learn about National Engineering Corporation, a trusted supplier of industrial valves, automation products, pneumatic components, instrumentation, gauges, fittings, tubes, and industrial accessories for process industries.">
+	<meta name="keywords" content="National Engineering Corporation, industrial valves supplier, automation products, instrumentation supplier, pneumatics, pressure gauges, fittings, tubing, Ankleshwar, Dahej, Vapi">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" id="awesome-font-css" href="css/font-awesome.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ionicon-font-css" href="css/ionicon.css" type="text/css" media="all">
+	<link rel="stylesheet" id="slick-slider-css" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" id="slick-theme-css" href="css/slick-theme.css" type="text/css" media="all">
+	<link rel="stylesheet" id="magnific-popup-css" href="css/magnific-popup.css" type="text/css" media="all">
+	<link rel="stylesheet" id="industris-style-css" href="style.css" type="text/css" media="all">
+
+	<link rel="shortcut icon" href="favicon.png"> -->
+
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/ionicon.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+    <link rel="shortcut icon" href="{% static 'website/images/favicon.png' %}">
+</head>
+
+<body>
+	<div id="page" class="site">
+		<div class="collapse searchbar" id="searchbar">
+	        <div class="search-area">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	                        <div class="input-group">
+	                            <input type="text" class="form-control" placeholder="Search for...">
+	                            <span class="input-group-btn">
+	            					<button class="btn btn-primary" type="button">Go!</button>
+	            				</span> 
+	            			</div>
+	                        <!-- /input-group -->
+	                    </div>
+	                    <!-- /.col-lg-6 -->
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <header id="site-header" class="site-header mobile-header-blue header-style-1">
+	        <div id="header_topbar" class="header-topbar md-hidden sm-hidden clearfix">
+	            <div class="container-custom">
+	                <div class="row">
+	                    <div class="col-md-8">
+	                        <!-- Info on Topbar -->
+	                        <ul class="topbar-left">
+	                            <li><i class="icon ion-md-pin"></i>G-23, Silver Plaza, Pratin Chowkdi, Ankleshwar</li>
+								<li><i class="icon ion-md-call"></i>+91 95741 67304</li>
+								<li><i class="icon ion-md-mail"></i>sales.nationaleng@gmail.com</li>
+	                        </ul>
+	                    </div>
+                        <!-- Info on topbar close -->
+	                    <!-- <div class="col-md-4">
+	                    	<ul class="topbar-right pull-right">
+		                        <li class="toggle_search topbar-search"><a href="#"><i class="icon ion-md-search"></i></a></li>
+		                        <li class="topbar-login"><a href="#"> Login </a></li>
+		                        <li class="topbar-languages"><a href="#"> English <i class="icon ion-ios-arrow-down"></i></a></li>
+	                        </ul>
+	                    </div> -->
+	                </div>
+	            </div>
+	        </div>
+	        <!-- Top bar close -->
+	        <div class="main-header md-hidden sm-hidden">
+	        	<div class="container-custom">
+	        		<div class="row">
+	        			<div class="col-md-3">
+			        		<div class="logo-brand">
+			        			<a href="{% url 'home' %}"><img src="{% static 'website/images/logo1.png' %}" alt="industris"></a>
+			        		</div>
+			        	</div>
+			        	<div class="col-md-9">
+			        		<div class="main-navigation">
+			        			<ul id="primary-menu" class="menu">
+			        				<li class="menu-item"><a href="{% url 'home' %}">Home</a>
+			        					
+			        				</li>
+			        				<li class="menu-item  current-menu-ancestor current-menu-parent"><a href="{% url 'about' %}">About Us</a>
+			        					
+			        				</li>
+			        				
+			        				<li class="menu-item "><a href="{% url 'partner-clients' %}">Clients</a>
+										
+			        				</li>
+			        				<li class=""><a href="{% url 'products' %}">Products</a>
+										
+			        					<!-- <ul class="sub-menu">
+			        						<li class="menu-item"><a href="news.html">News 1</a></li>
+			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
+			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
+			        					</ul> -->
+			        				</li>
+
+			        				<li class="menu-item "><a href="{% url 'contactus' %}">Contact Us</a>
+			        				</li>
+			        			</ul>
+		        				<a href="{% url 'contactus' %}" class="btn btn-primary">Get a Quote<i class="icon ion-md-paper-plane"></i></a>
+			        		</div>
+			        	</div>
+		        	</div>
+	        	</div>
+	        </div>
+	        <!-- Main header start -->
+	        
+	        <!-- Mobile header start -->
+	        <div class="mobile-header">
+	        	<div class="container-custom">
+	        		<div class="row">
+	        			<div class="col-xs-6">
+			        		<div class="logo-brand-mobile">
+			        			<a href="{% url 'home' %}"><img src="{% static 'website/images/logo1.png' %}" alt="industris"></a>
+			        		</div>
+			        	</div>
+	        			<div class="col-xs-6">
+			        		<div id="mmenu_toggle">
+			                    <button></button>
+			                </div>
+			        	</div>
+			        	<div class="col-xs-12">
+			        		<div class="mobile-nav">
+			        			<ul id="primary-menu-mobile" class="mobile-menu">
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'home' %}">Home</a>
+			        					
+			        				</li>
+			        				<li class="menu-item current-menu-ancestor current-menu-parent"><a href="{% url 'about' %}">About Us</a>
+			        				
+			        				</li>
+			        				
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'partner-clients' %}">Clients</a>
+			        					
+			        				</li>
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'products' %}">Products</a>
+										
+			        					<!-- <ul class="sub-menu">
+			        						<li class="menu-item"><a href="news.html">News 1</a></li>
+			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
+			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
+			        					</ul> -->
+			        				</li>
+
+			        				<li class="menu-item"><a href="{% url 'contactus' %}">Contact Us</a>
+			        					
+			        				</li>
+			        			</ul>
+		        				<a href="#" class="btn btn-primary">Get a quote<i class="icon ion-md-paper-plane"></i></a>
+			        		</div>
+			        	</div>
+		        	</div>
+	        	</div>
+	        </div>
+	    </header>
+        <!-- Mobile header start -->
+
+		<div id="content" class="site-content">
+			<div class="page-header" style="background: url('{% static 'website/images/banner/aboutus-banner.png' %}') no-repeat center center;">
+			    <div class="container">
+			        <div class="breadc-box no-line">
+			            <div class="row">
+			                <div class="col-md-12">
+			                    <h2 class="page-title">About Us</h2>
+			                    <ul id="breadcrumbs" class="breadcrumbs none-style">
+			                        <li><a href="{% url 'home' %}">Home</a></li>
+			                        <li class="active">About Us</li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<h4 class="text-primary">ABOUT US</h4>
+								<h2>Industrial Engineering Product Supplier</h2>
+								<p>National Engineering Corporation is a trusted supplier of industrial valves, automation products, pneumatic components, instrumentation, gauges, fittings, tubes, and industrial accessories. We provide products suitable for air, water, steam, oil, gas, chemicals, and process applications.</p>
+								<br>
+								<p>
+								With offices in Dahej, Vapi, and Ankleshwar, we support industries with dependable product supply, practical product selection, and technical support for different industrial requirements.
+								</p>
+								<a href="{% url 'contactus' %}" class="btn btn-primary">Contact Us</a>
+								<div class="industris-space-sm"></div>
+						</div>
+						<div class="col-md-offset-1 col-md-5 col-sm-12 sm-center">
+							<div class="about-img-right">
+								<img src="{% static 'website/images/abimg.png' %}" alt="National Engineering Corporation industrial products supplier">
+								<div class="about-img-small">
+									<!-- <div class="overlay"><img src="https://via.placeholder.com/211x211.png" class="circle-img" alt=""></div>
+										<div class="about-content">
+										<h2 class="text-primary">24+</h2>
+										<p class="text-white">Years of Experience</p>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+
+			    <div class="industris-space-60"></div>
+			    <div class="industris-space"></div>
+			    
+			    <div class="container">
+			    	<div class="row">
+			    		<div class="col-md-4 col-sm-6">
+			    			<div class="icon-box">
+			    				<div class="icon-box-title">
+			    					<i class="icon ion-md-ribbon"></i><h4>Wide Product Range <span class="number" data-to="12" data-speed="2000">(0</span><span>+)</span></h4>
+			    				</div>
+			    				<p>We supply a broad range of valves, automation products, instruments, pneumatics, fittings, tubes, and accessories.</p>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-sm-6">
+			    			<div class="icon-box">
+			    				<div class="icon-box-title">
+			    					<i class="icon ion-ios-briefcase"></i><h4>Industrial Clients <span class="number" data-to="100" data-speed="2000">(0</span><span>+)</span></h4>
+			    				</div>
+			    				<p>We serve customers across chemical, pharmaceutical, engineering, textile, water treatment, and manufacturing sectors.</p>
+			    			</div>
+			    		</div>
+			    		<div class="col-md-4 col-sm-6">
+			    			<div class="icon-box">
+			    				<div class="icon-box-title">
+			    					<i class="icon ion-ios-contacts"></i><h4>Locations  <span class="number" data-to="1000" data-speed="2000">(0</span><span>+)</span></h4>
+			    				</div>
+			    				<p>Our presence in Dahej, Vapi, and Ankleshwar helps us support major industrial areas efficiently.</p>
+			    			</div>
+			    		</div>
+
+
+						<!-- <div class="col-md-4 col-sm-6">
+							<div class="icon-box">
+								<div class="icon-box-title">
+									<i class="icon ion-md-ribbon"></i>
+									<h4>Wide Product Range <span class="number" data-to="100" data-speed="2000">(0</span><span>+)</span></h4>
+								</div>
+								<p>We supply a broad range of valves, automation products, instruments, pneumatics, fittings, tubes, and accessories.</p>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-sm-6">
+							<div class="icon-box">
+								<div class="icon-box-title">
+									<i class="icon ion-ios-briefcase"></i>
+									<h4>Industrial Clients <span class="number" data-to="50" data-speed="2000">(0</span><span>+)</span></h4>
+								</div>
+								<p>We serve customers across chemical, pharmaceutical, engineering, textile, water treatment, and manufacturing sectors.</p>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-sm-6">
+							<div class="icon-box">
+								<div class="icon-box-title">
+									<i class="icon ion-ios-contacts"></i>
+									<h4>Locations <span class="number" data-to="3" data-speed="2000">(0</span><span>)</span></h4>
+								</div>
+								<p>Our presence in Dahej, Vapi, and Ankleshwar helps us support major industrial areas efficiently.</p>
+							</div>
+						</div> -->
+			    	</div>
+			    </div>
+			</section>
+
+
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12"> 
+
+							<h4 class="text-primary text-center">OUR BRANDS</h4>
+							<h2 class="text-center">Authorised Distributor Brands</h2>
+							<div class="industris-space-30"></div>
+							
+                            <div class="partner-slider image-carousel text-center" data-show="5" data-arrow="false">
+
+                                <div>
+						            <div class="partner-item text-center clearfix">
+						                <div class="inner">
+					                        <div class="thumb">
+					                            <img src="{% static 'website/images/distributers/baumer.png' %}" alt="Baumer">
+					                        </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <div>
+						            <div class="partner-item text-center clearfix">
+						                <div class="inner">
+					                        <div class="thumb">
+					                            <img src="{% static 'website/images/distributers/festo.png' %}" alt="Festo">
+					                        </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <div>
+						            <div class="partner-item text-center clearfix">
+						                <div class="inner">
+					                        <div class="thumb">
+					                            <img src="{% static 'website/images/distributers/honeywell.png' %}" alt="Honeywell">
+					                        </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <div>
+						            <div class="partner-item text-center clearfix">
+						                <div class="inner">
+					                        <div class="thumb">
+					                            <img src="{% static 'website/images/distributers/rotex.png' %}" alt="Rotex">
+					                        </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <div>
+						            <div class="partner-item text-center clearfix">
+						                <div class="inner">
+					                        <div class="thumb">
+												<img src="{% static 'website/images/distributers/Uflow.png' %}" alt="Uflow">
+					                        </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <div>
+						            <div class="partner-item text-center clearfix">
+						                <div class="inner">
+					                        <div class="thumb">
+												<img src="{% static 'website/images/distributers/walson.png' %}" alt="Walson">
+					                        </div>
+						                </div>
+						            </div>
+						        </div>
+
+						        <div>
+						            <div class="partner-item text-center clearfix">
+						                <div class="inner">
+					                        <div class="thumb">
+												<img src="{% static 'website/images/distributers/x2.png' %}" alt="X2 Valves">
+					                        </div>
+						                </div>
+						            </div>
+						        </div>
+
+                            </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="bg-light">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<h3>Our values</h3>
+							<p>
+								At National Engineering Corporation, our focus is to provide reliable industrial products, proper technical support, and timely supply. We work with industries that require dependable flow control, pressure monitoring, automation, pneumatic, and instrumentation products.
+							</p>
+							<p>
+								We believe in practical product selection, long-term customer relationships, and supporting industries with products suitable for real process conditions.
+							</p>
+							<img src="images/sign.png" alt="">
+							<div class="row">
+								<div class="col-md-offset-1 col-md-6 no-padding-sm-left">
+									<div class="about-author">
+										<div class="about-author-info">
+											<h4><strong>Shoaib kapa</strong></h4>
+											<p>Founder</p>
+										</div>
+										<div class="about-author-media">
+											<a href="#"><i class="icon ion-logo-linkedin"></i></a>
+											<a href="#"><i class="icon ion-logo-twitter"></i></a>
+											<a href="#"><i class="icon ion-logo-skype"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="industris-space-sm"></div>
+						</div>
+						<div class="col-md-offset-1 col-md-4 about-border-left">
+							<h3>Why Choose Us?</h3>
+							<p>As fellow entrepreneurs, we understand the need for space which gives your business room</p>
+							<ul class="unstyle">
+								<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Wide range of industrial products</a></li>
+								<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Application-focused product support</a></li>
+								<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Products for air, water, steam, oil, gas, and chemicals</a></li>
+								<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Support across Gujarat industrial areas</a></li>
+							</ul>
+							<a href="{% url 'contactus' %}" class="btn btn-primary">Get a Quote</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="text-primary">CLIENTS</h4>
+							<h2>What our customers say</h2>
+
+							<div class="testi-slider" data-show="2" data-arrow="true">
+
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<p>“I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”</p>
+										</div>
+										<div class="testi-info">
+											<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+											<h4>Emilia Clarke<span>Manager Avenger company</span></h4>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<p>"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."</p>
+										</div>
+										<div class="testi-info">
+											<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+											<h4>Micheal Sejuro<span>Manager Fusion themes company</span></h4>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<p>"I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine."</p>
+										</div>
+										<div class="testi-info">
+											<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+											<h4>Emilia Clarke<span>Manager Avenger company</span></h4>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<p>"I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now."</p>
+										</div>
+										<div class="testi-info">
+											<img src="https://via.placeholder.com/90x90.png" alt="" class="circle-img">
+											<h4>Micheal Sejuro<span>Manager Fusion themes company</span></h4>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="text-primary">INDUSTRIES</h4>
+							<h2>Industries We Serve</h2>
+			
+							<div class="testi-slider" data-show="2" data-arrow="true">
+			
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<h4>Chemical Industries</h4>
+											<p>We supply valves, gauges, instruments, fittings, and automation products for chemical processing and plant applications.</p>
+										</div>
+									</div>
+								</div>
+			
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<h4>Pharmaceutical Industries</h4>
+											<p>Our products support pharma plants with valves, pneumatics, instrumentation, and process control accessories.</p>
+										</div>
+									</div>
+								</div>
+			
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<h4>Engineering Industries</h4>
+											<p>We provide industrial valves, cylinders, fittings, tubes, and utility products for engineering operations.</p>
+										</div>
+									</div>
+								</div>
+			
+								<div>
+									<div class="testi-box">
+										<div class="testi-content">
+											<h4>Water Treatment Plants</h4>
+											<p>Our valves, flow meters, gauges, strainers, and instrumentation products are suitable for water treatment applications.</p>
+										</div>
+									</div>
+								</div>
+			
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="padding-top-bottom-0">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="cta-box" style="background-image: url('{% static 'website/images/blue.jpg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+								<div class="row">
+									<div class="col-md-6">
+										<h3>Need Industrial Valves, Instruments or Pneumatic Products?</h3>
+										<p>
+											Contact National Engineering Corporation for product inquiries, specifications, and supply support.
+										</p>
+									</div>
+									<div class="col-md-6 align-self-center text-right">
+										<a href="{% url 'products' %}" class="btn btn-border-white">View Products</a>
+										<a href="{% url 'contactus' %}" class="btn btn-primary">Contact Us</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+
+		</div>
+
+		<div></div>
+	    
+
+	    <footer id="site-footer" class="site-footer site-footer-h3 bg-footer">
+	        <div class="main-footer main-footer-h3">
+	            <div class="container-custom">
+	                <div class="row">
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="media_image-1" class="widget widget_media_image">
+									<a href="{% url 'home' %}" class="footer-logo-link">
+										<img class="footer-logo-img" src="{% static 'website/images/logo-white-p.png' %}" alt="National Engineering Corporation">
+									</a>
+		                        </div>
+		                        <div id="custom_html-1" class="widget_text widget widget_custom_html">
+		                            <div class="textwidget custom-html-widget">
+		                                <p>© National Engineering Corporation. <br>All Rights Reserved.</p>
+										<p>GST No.: 24AZKPK0811G1ZR</p>
+		                            </div>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="custom_html-2" class="widget_text widget widget_custom_html padding-left">
+		                            <div class="textwidget custom-html-widget">
+		                                <ul>
+		                                    <li><a href="{% url 'products' %}">Industrial Valves</a></li>
+											<li><a href="{% url 'products' %}">Automation Products</a></li>
+											<li><a href="{% url 'products' %}">Instrumentation</a></li>
+											<li><a href="{% url 'products' %}">Pneumatics</a></li>
+											<li><a href="{% url 'products' %}">Fittings & Tubing</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+	                        </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="custom_html-3" class="widget_text widge widget-footer widget_custom_html padding-left">
+		                            <div class="textwidget custom-html-widget">
+		                                <ul>
+		                                    <li><a href="{% url 'about' %}">About Us</a></li>
+											
+											<li><a href="{% url 'partner-clients' %}">Clients</a></li>
+											<li><a href="{% url 'products' %}">Products</a></li>
+											<li><a href="{% url 'contactus' %}">Contact Us</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                    <div class="col-md-3 col-sm-6">
+	                    	<div class="widget-footer">
+		                        <div id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget">
+		                            <!-- Mailchimp for WordPress v4.5.2 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+		                            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1696" method="post" data-id="1696" data-name="Industris Subscribe">
+	                                    <div class="input-group">
+	                                        <input type="email" name="EMAIL" class="form-control" placeholder="Email Address" required="">
+	                                        <span class="input-group-btn">
+	                                        	<button type="submit" class="btn btn-subcribe"><i class="icon ion-md-checkmark"></i></button>
+	                                        </span>
+	                                    </div>
+		                                <input type="hidden" name="_mc4wp_timestamp" value="1560227031">
+		                                <input type="hidden" name="_mc4wp_form_id" value="1696">
+		                                <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+		                                <div class="mc4wp-response"></div>
+		                            </form>
+		                        </div>
+	                            <!-- / Mailchimp for WordPress Plugin -->
+
+	                            <div class="footer-social ot-socials bg-white">
+	                            	follow us:
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-facebook"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-instagram"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-skype"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-twitter"></i></a>
+	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-youtube"></i></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- end col-lg-3 -->
+
+	                </div>
+	            </div>
+	        </div>
+	        <!-- .main-footer -->
+	        <div class="footer-bottom footer-bottom-h3">
+	            <div class="container-custom">
+	            	<div class="row">
+	            		<div class="col-md-12">
+		                    <ul class="topbar-left">
+		                        <li><i class="icon ion-md-pin"></i>Gf-115, Omkar 2 Complex, Station Road, ANKLESHWAR</li>
+		                        <li><i class="icon ion-md-call"></i>+91 9722552261, +91 7046185101</li>
+		                        <li><i class="icon ion-md-mail"></i>sales.nationaleng@gmail.com</li>
+		                    </ul>
+			        		<a id="back-to-top" href="#" class="btn btn-back-to-top show pull-right">Back to top<i class="icon ion-ios-arrow-dropup-circle"></i></a>
+			        	</div>
+			        </div>
+	            </div>
+	        </div>
+	        <!-- .copyright-footer -->
+	    </footer>
+	</div>
+
+	<script src="{% static 'website/js/jquery.min.js' %}"></script>
+    <script src="{% static 'website/js/slick.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'website/js/countto.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'website/js/scripts.js' %}"></script>
+</body>
+</html>
