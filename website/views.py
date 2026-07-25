@@ -97,9 +97,14 @@ def partnerclients(request):
 def products(request):
     categories = [
         {
-            "name": "Mechanical & Automation",
-            "slug": "mechanical",
-            "folder": "mechanical",
+        "name": "Mechanical Valve",
+        "slug": "mechanical",
+        "folder": "mechanical",
+        },
+        {
+            "name": "Valve Automation",
+            "slug": "automation",
+            "folder": "automation",
         },
         {
             "name": "Pressure Measurement",
@@ -142,7 +147,13 @@ def products(request):
             folder_path = base_path / category["folder"]
 
             if folder_path.exists():
-                for image_file in sorted(folder_path.iterdir()):
+                image_files = sorted(folder_path.iterdir())
+
+                # Reverse only Pressure Measurement products
+                if category["slug"] == "pressure":
+                    image_files.reverse()
+
+                for image_file in image_files:
                     if image_file.suffix.lower() in allowed_extensions:
                         product_title = image_file.stem.replace("-", " ").replace("_", " ").title()
 
@@ -184,3 +195,7 @@ def contactus(request):
         return render(request, "website/contact-us.html")
 
     return render(request, "website/contact-us.html")
+
+
+def custom_404(request, exception=None):
+    return render(request, "website/404-page.html", status=404)

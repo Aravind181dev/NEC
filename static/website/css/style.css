@@ -5354,3 +5354,840 @@ section.padding-bottom-medium:empty {
 	}
 }
 
+/* ==================================================
+   PREMIUM HOME CLIENTS CAROUSEL
+================================================== */
+
+.premium-clients-section {
+  position: relative;
+  margin: 0 !important;
+  padding: 46px 0 50px !important;
+  overflow: hidden;
+
+  background-color: #f7f9fc;
+  border-top: 1px solid rgba(1, 77, 151, 0.08);
+  border-bottom: 1px solid rgba(1, 77, 151, 0.08);
+}
+
+/* Section heading */
+
+.premium-clients-heading {
+  margin: 0 0 28px;
+}
+
+.premium-clients-heading span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #f2bd00;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.premium-clients-heading h2 {
+  margin: 0;
+
+  color: #014d97;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Carousel outer area */
+
+.premium-clients-carousel-wrap {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+/* Remove unwanted template spacing */
+
+.premium-clients-carousel {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.premium-clients-carousel .slick-list {
+  margin: 0 -10px;
+  padding: 0 !important;
+}
+
+.premium-clients-carousel .slick-track {
+  display: flex !important;
+  align-items: stretch;
+}
+
+.premium-clients-carousel .slick-slide {
+  height: auto !important;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.premium-clients-carousel .slick-slide > div {
+  height: 100%;
+}
+
+/* Equal professional logo cards */
+
+.premium-clients-carousel .partner-item {
+  width: 100%;
+  height: 108px;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(1, 77, 151, 0.09);
+  border-radius: 6px;
+
+  box-shadow:
+      0 5px 16px rgba(12, 52, 91, 0.04),
+      0 1px 3px rgba(12, 52, 91, 0.03);
+
+  transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+}
+
+.premium-clients-carousel .partner-item .inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.premium-clients-carousel .partner-item .thumb {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 20px 22px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+/* Normalise different client logo sizes */
+
+.premium-clients-carousel .partner-item .thumb img {
+  display: block !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  max-width: 150px !important;
+  max-height: 55px !important;
+
+  margin: 0 auto !important;
+  object-fit: contain;
+
+  filter: grayscale(0%);
+  opacity: 1;
+
+  transition:
+      filter 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+}
+
+/* Subtle premium hover */
+
+.premium-clients-carousel .partner-item:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(1, 77, 151, 0.18);
+
+  box-shadow:
+      0 12px 28px rgba(12, 52, 91, 0.09),
+      0 3px 8px rgba(12, 52, 91, 0.05);
+}
+
+.premium-clients-carousel .partner-item:hover .thumb img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* Prevent space between this and the next section */
+
+.premium-clients-section + section {
+  margin-top: 0 !important;
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 991px) {
+
+  .premium-clients-section {
+      padding: 40px 0 44px !important;
+  }
+
+  .premium-clients-heading {
+      margin-bottom: 24px;
+  }
+
+  .premium-clients-heading h2 {
+      font-size: 25px;
+  }
+
+  .premium-clients-carousel .partner-item {
+      height: 102px;
+  }
+
+  .premium-clients-carousel .partner-item .thumb {
+      padding: 18px;
+  }
+
+  .premium-clients-carousel .partner-item .thumb img {
+      max-width: 135px !important;
+      max-height: 50px !important;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+
+  .premium-clients-section {
+      padding: 34px 0 38px !important;
+  }
+
+  .premium-clients-heading {
+      margin-bottom: 22px;
+  }
+
+  .premium-clients-heading span {
+      font-size: 11px;
+      letter-spacing: 1.6px;
+  }
+
+  .premium-clients-heading h2 {
+      font-size: 22px;
+  }
+
+  .premium-clients-carousel .slick-list {
+      margin: 0 -6px;
+  }
+
+  .premium-clients-carousel .slick-slide {
+      padding: 0 6px;
+  }
+
+  .premium-clients-carousel .partner-item {
+      height: 94px;
+  }
+
+  .premium-clients-carousel .partner-item .thumb {
+      padding: 16px;
+  }
+
+  .premium-clients-carousel .partner-item .thumb img {
+      max-width: 120px !important;
+      max-height: 46px !important;
+  }
+}
+
+
+.product-hover-simple-actions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 12px;
+	height: 100%;
+}
+
+
+
+/* ==================================================
+   PRODUCT SEARCH - PREMIUM UI
+================================================== */
+
+.product-search-panel {
+	width: 100%;
+	max-width: 760px;
+	margin: 26px auto 34px;
+	padding: 0;
+	text-align: center;
+}
+
+.product-search-input-wrap {
+	position: relative;
+	width: 100%;
+	height: 58px;
+
+	display: flex;
+	align-items: center;
+
+	background-color: #ffffff;
+	border: 1px solid rgba(1, 77, 151, 0.16);
+	border-radius: 4px;
+
+	box-shadow:
+		0 10px 28px rgba(1, 77, 151, 0.08),
+		0 2px 8px rgba(0, 0, 0, 0.03);
+
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease,
+		transform 0.25s ease;
+}
+
+.product-search-input-wrap:focus-within {
+	border-color: #014d97;
+
+	box-shadow:
+		0 14px 34px rgba(1, 77, 151, 0.14),
+		0 0 0 4px rgba(1, 77, 151, 0.07);
+
+	transform: translateY(-1px);
+}
+
+.product-search-input-wrap i {
+	width: 58px;
+	min-width: 58px;
+
+	color: #014d97;
+	font-size: 22px;
+	line-height: 1;
+	text-align: center;
+}
+
+.product-search-input-wrap input {
+	width: 100%;
+	height: 100%;
+	padding: 0 16px 0 0;
+
+	border: none;
+	outline: none;
+	background: transparent;
+
+	color: #1f2933;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+}
+
+.product-search-input-wrap input::placeholder {
+	color: #8a98a8;
+	font-weight: 400;
+}
+
+.product-search-input-wrap button {
+	height: 38px;
+	margin-right: 10px;
+	padding: 0 18px;
+
+	border: none;
+	border-radius: 3px;
+	outline: none;
+
+	background-color: #014d97;
+	color: #ffffff;
+
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 38px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	transition:
+		background-color 0.25s ease,
+		color 0.25s ease;
+}
+
+.product-search-input-wrap button:hover {
+	background-color: #f2bd00;
+	color: #ffffff;
+}
+
+.product-search-status {
+	margin-top: 12px;
+
+	color: #6f7f8f;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.product-no-result {
+	display: none;
+
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto 34px;
+	padding: 18px 22px;
+
+	background-color: #f7f9fc;
+	border: 1px solid rgba(1, 77, 151, 0.12);
+	border-left: 4px solid #f2bd00;
+	border-radius: 4px;
+
+	color: #014d97;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* Correct spacing between search, tabs, and products */
+
+#product-catalog .cat-filter {
+	margin-top: 0;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#projects {
+	margin-top: 0;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+	.product-search-panel {
+		max-width: 100%;
+		margin: 22px auto 28px;
+	}
+
+	.product-search-input-wrap {
+		height: auto;
+		min-height: 54px;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.product-search-input-wrap i {
+		width: 48px;
+		min-width: 48px;
+		font-size: 20px;
+	}
+
+	.product-search-input-wrap input {
+		width: calc(100% - 48px);
+		height: 54px;
+		padding-right: 14px;
+		font-size: 14px;
+	}
+
+	.product-search-input-wrap button {
+		width: calc(100% - 20px);
+		margin: 0 10px 10px;
+	}
+}
+
+
+
+/* ==================================================
+   CUSTOM 404 PAGE - NATIONAL ENGINEERING CORPORATION
+================================================== */
+
+.nec-404-section {
+	position: relative;
+	min-height: 680px;
+	padding: 110px 0;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	background:
+		linear-gradient(135deg, rgba(1, 77, 151, 0.96), rgba(1, 42, 83, 0.94)),
+		url("../images/banner/product-banner.png") no-repeat center center;
+	background-size: cover;
+}
+
+.nec-404-section:before {
+	content: "";
+	position: absolute;
+	right: -140px;
+	top: -140px;
+	width: 420px;
+	height: 420px;
+	border-radius: 50%;
+	background-color: rgba(242, 189, 0, 0.12);
+}
+
+.nec-404-section:after {
+	content: "";
+	position: absolute;
+	left: -90px;
+	bottom: -90px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.08);
+}
+
+.nec-404-content,
+.nec-404-card {
+	position: relative;
+	z-index: 2;
+}
+
+.nec-404-label {
+	display: inline-block;
+	margin-bottom: 18px;
+	padding: 8px 16px;
+	background-color: rgba(242, 189, 0, 0.14);
+	border: 1px solid rgba(242, 189, 0, 0.35);
+	color: #f2bd00;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+}
+
+.nec-404-content h1 {
+	margin: 0 0 14px;
+	color: #ffffff;
+	font-size: 150px;
+	font-weight: 900;
+	line-height: 0.9;
+	letter-spacing: -6px;
+}
+
+.nec-404-content h2 {
+	max-width: 650px;
+	margin: 0 0 20px;
+	color: #ffffff;
+	font-size: 38px;
+	font-weight: 800;
+	line-height: 1.2;
+}
+
+.nec-404-content p {
+	max-width: 640px;
+	margin: 0 0 34px;
+	color: rgba(255, 255, 255, 0.82);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.75;
+}
+
+.nec-404-actions {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	flex-wrap: wrap;
+}
+
+.nec-404-secondary-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+	padding: 0 24px;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.38);
+	color: #ffffff !important;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
+}
+
+.nec-404-secondary-btn i {
+	margin-left: 8px;
+}
+
+.nec-404-secondary-btn:hover {
+	background-color: #f2bd00;
+	border-color: #f2bd00;
+	color: #ffffff !important;
+}
+
+.nec-404-card {
+	padding: 42px 36px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.nec-404-icon {
+	width: 74px;
+	height: 74px;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(1, 77, 151, 0.08);
+	border-radius: 50%;
+	color: #014d97;
+	font-size: 42px;
+}
+
+.nec-404-card h3 {
+	margin: 0 0 15px;
+	color: #014d97;
+	font-size: 25px;
+	font-weight: 800;
+	line-height: 1.25;
+}
+
+.nec-404-card p {
+	margin: 0 0 24px;
+	color: #687887;
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+.nec-404-card a {
+	color: #014d97;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+
+.nec-404-card a i {
+	margin-left: 7px;
+	color: #f2bd00;
+}
+
+@media only screen and (max-width: 991px) {
+	.nec-404-section {
+		padding: 80px 0;
+	}
+
+	.nec-404-content {
+		margin-bottom: 42px;
+	}
+
+	.nec-404-content h1 {
+		font-size: 110px;
+	}
+
+	.nec-404-content h2 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.nec-404-section {
+		min-height: auto;
+		padding: 70px 0;
+	}
+
+	.nec-404-content h1 {
+		font-size: 86px;
+		letter-spacing: -3px;
+	}
+
+	.nec-404-content h2 {
+		font-size: 25px;
+	}
+
+	.nec-404-content p {
+		font-size: 15px;
+	}
+
+	.nec-404-card {
+		padding: 32px 24px;
+	}
+}
+
+
+/* NEC About Page - Certificates and Founders */
+
+.nec-about-main-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.certificate-showcase {
+	width: 100%;
+	max-width: 620px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.certificate-carousel .slick-list {
+	overflow: visible !important;
+	padding: 45px 0 35px !important;
+}
+
+.certificate-carousel .slick-track {
+	display: flex !important;
+	align-items: center;
+}
+
+.certificate-carousel .slick-slide {
+	height: auto !important;
+	position: relative;
+	z-index: 1;
+}
+
+.certificate-slide {
+	padding: 0 10px;
+}
+
+.certificate-card {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 360px;
+	background: #ffffff;
+	border: 1px solid rgba(1, 77, 151, 0.14);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 8px 24px rgba(12, 52, 91, 0.10);
+	transform: scale(0.82);
+	opacity: 0.45;
+	filter: blur(1.5px);
+	transition: all 0.45s ease;
+}
+
+.certificate-carousel .slick-center {
+	z-index: 5;
+}
+
+.certificate-carousel .slick-center .certificate-card {
+	transform: translateY(-24px) scale(1.06);
+	opacity: 1;
+	filter: blur(0);
+	box-shadow: 0 20px 42px rgba(12, 52, 91, 0.22);
+}
+
+.certificate-pdf {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	pointer-events: none;
+	background: #f7f9fc;
+}
+
+.certificate-name {
+	position: absolute;
+	left: 12px;
+	right: 12px;
+	bottom: 12px;
+	z-index: 2;
+	display: block;
+	padding: 8px 10px;
+	background: rgba(1, 77, 151, 0.92);
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.about-founders-strip {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+	margin: 28px 0 30px;
+}
+
+.about-founder-card {
+	text-align: center;
+}
+
+.about-founder-card img,
+.founder-photo-placeholder {
+	width: 82px;
+	height: 98px;
+	margin: 0 auto 10px;
+	border-radius: 8px;
+	object-fit: cover;
+	object-position: center;
+	border: 1px solid rgba(1, 77, 151, 0.18);
+	background: #f4f7fb;
+	box-shadow: 0 6px 18px rgba(12, 52, 91, 0.08);
+}
+
+.founder-photo-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #7a8797;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1.25;
+	text-transform: uppercase;
+}
+
+.about-founder-card h5 {
+	margin: 0 0 2px;
+	font-size: 13px;
+	line-height: 1.25;
+	color: #014d97;
+	font-weight: 700;
+}
+
+.about-founder-card span {
+	display: block;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #707070;
+}
+
+@media only screen and (max-width: 991px) {
+	.nec-about-main-row {
+		display: block;
+	}
+
+	.certificate-showcase {
+		margin-top: 35px;
+	}
+
+	.certificate-card {
+		height: 340px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.about-founders-strip {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 18px 12px;
+	}
+
+	.certificate-card {
+		height: 320px;
+		transform: scale(0.9);
+		opacity: 0.55;
+		filter: blur(1px);
+	}
+
+	.certificate-carousel .slick-center .certificate-card {
+		transform: translateY(-12px) scale(1);
+	}
+}
+
+
+/* Product category tabs - one line only, no laggy hover effect */
+
+#product-catalog .cat-filter {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap !important;
+	gap: 28px;
+	white-space: nowrap;
+	overflow: visible !important;
+}
+
+#product-catalog .cat-filter .filter-item {
+	white-space: nowrap !important;
+	display: inline-block !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 16px;
+	line-height: 1.4;
+	transition: none !important;
+	transform: none !important;
+}
+
+#product-catalog .cat-filter .filter-item:hover,
+#product-catalog .cat-filter .filter-item.selected {
+	transition: none !important;
+	transform: none !important;
+}

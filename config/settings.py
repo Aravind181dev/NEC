@@ -9,6 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", "unsafe-local-development-key-change-me")
 
 DEBUG = os.environ.get("DEBUG", "True").lower() == "true"
+# DEBUG = False
 
 ALLOWED_HOSTS = [
     "127.0.0.1",

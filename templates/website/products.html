@@ -174,10 +174,30 @@
 			<section id="product-catalog">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 text-center">
 							<h4 class="text-primary">EXPLORE</h4>
 							<h2>Our Products</h2>
-							<br>
+						
+							<div class="product-search-panel">
+								<div class="product-search-input-wrap">
+									<i class="icon ion-md-search"></i>
+						
+									<input
+										type="text"
+										id="productSearchInput"
+										placeholder="Search by product name..."
+										autocomplete="off"
+									>
+						
+									<button type="button" id="productSearchClear">
+										Clear
+									</button>
+								</div>
+						
+								<div id="productSearchStatus" class="product-search-status">
+									Search products by name or category
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -215,6 +235,8 @@
 								{% endfor %}
 							</div>
 
+							
+
 							<!-- <div id="filters" class="cat-filter">
 								<a href="#" data-filter="*" class="filter-item all-cat selected">All Products</a>
 							
@@ -228,11 +250,16 @@
 						</div>
 					</div>
 				</div>
+				
+				<div id="productNoResult" class="product-no-result">
+					No matching products found. Try another product name.
+				</div>
 
 					<div id="projects" class="project-grid-2 projects">
 
 						{% for product in products %}
-							<div class="project-item {{ product.category }} col-lg-3 col-md-4 col-sm-6 no-padding">
+						<div class="project-item {{ product.category }} col-lg-3 col-md-4 col-sm-6 no-padding"
+	 						data-search="{{ product.title|lower }} {{ product.category_name|lower }}">
 								<div class="inner">
 									<!-- <img src="{% static product.image %}" alt="{{ product.alt }}"> -->
 									<img 
@@ -240,7 +267,7 @@
 										alt="{{ product.alt }}" 
 									>
 
-									<div class="project-info">
+									<!-- <div class="project-info">
 										<div class="project-meta">{{ product.category_name }}</div>
 
 										<div class="project-content">
@@ -253,6 +280,21 @@
 											<a href="{% url 'contactus' %}">
 												Enquire Now <i class="icon ion-md-add-circle"></i>
 											</a>
+										</div>
+									</div> -->
+
+
+									<div class="project-info">
+										<div class="project-content product-hover-simple-actions">
+									
+											<a href="{% url 'contactus' %}">
+												Enquire Now <i class="icon ion-md-add-circle"></i>
+											</a>
+									
+											<a href="{% static product.image %}" download="{{ product.title }}.webp">
+												Download <i class="icon ion-md-download"></i>
+											</a>
+									
 										</div>
 									</div>
 								</div>
@@ -388,52 +430,113 @@
     <script src="{% static 'website/js/scripts.js' %}"></script>
 
 	<script>
-		$(window).on("load", function () {
+		jQuery(window).on("load", function () {
 			var selectedCategory = "{{ selected_category }}";
-			var $container = $("#projects");
-			var $filterLinks = $("#filters a");
+			var $container = jQuery("#projects");
+			var $filterLinks = jQuery("#filters a");
+			var $searchInput = jQuery("#productSearchInput");
+			var $clearButton = jQuery("#productSearchClear");
+			var $status = jQuery("#productSearchStatus");
+			var $noResult = jQuery("#productNoResult");
 	
 			if (!$container.length) {
 				return;
 			}
 	
-			var filterValue = "*";
+			var currentFilter = "*";
+			var searchText = "";
 	
 			if (selectedCategory && selectedCategory !== "all") {
-				filterValue = "." + selectedCategory;
+				currentFilter = "." + selectedCategory;
+			}
+	
+			function updateSearchStatus(matchCount) {
+				if (!$status.length) {
+					return;
+				}
+	
+				if (searchText === "") {
+					$status.text("Search products by name or category");
+					return;
+				}
+	
+				if (matchCount === 1) {
+					$status.text("1 product found for \"" + searchText + "\"");
+				} else {
+					$status.text(matchCount + " products found for \"" + searchText + "\"");
+				}
+			}
+	
+			function applyProductFilter() {
+				var matchCount = 0;
+	
+				$container.isotope({
+					itemSelector: ".project-item",
+					filter: function () {
+						var $item = jQuery(this);
+						var itemSearchText = $item.attr("data-search") || "";
+	
+						var matchesCategory = currentFilter === "*" || $item.is(currentFilter);
+						var matchesSearch = searchText === "" || itemSearchText.indexOf(searchText) !== -1;
+	
+						if (matchesCategory && matchesSearch) {
+							matchCount++;
+							return true;
+						}
+	
+						return false;
+					}
+				});
+	
+				updateSearchStatus(matchCount);
+	
+				if ($noResult.length) {
+					if (matchCount === 0) {
+						$noResult.show();
+					} else {
+						$noResult.hide();
+					}
+				}
 			}
 	
 			$filterLinks.removeClass("selected");
 	
 			$filterLinks.each(function () {
-				if ($(this).attr("data-filter") === filterValue) {
-					$(this).addClass("selected");
+				if (jQuery(this).attr("data-filter") === currentFilter) {
+					jQuery(this).addClass("selected");
 				}
 			});
 	
-			$container.isotope({
-				itemSelector: ".project-item",
-				filter: filterValue
-			});
+			applyProductFilter();
 	
 			$filterLinks.off("click").on("click", function (e) {
 				e.preventDefault();
 	
-				var selectedFilter = $(this).attr("data-filter");
+				currentFilter = jQuery(this).attr("data-filter");
 	
 				$filterLinks.removeClass("selected");
-				$(this).addClass("selected");
+				jQuery(this).addClass("selected");
 	
-				$container.isotope({
-					filter: selectedFilter
-				});
+				applyProductFilter();
 	
-				if (selectedFilter === "*") {
+				if (currentFilter === "*") {
 					history.replaceState(null, "", "{% url 'products' %}#product-catalog");
 				} else {
-					var categorySlug = selectedFilter.replace(".", "");
+					var categorySlug = currentFilter.replace(".", "");
 					history.replaceState(null, "", "{% url 'products' %}?category=" + categorySlug + "#product-catalog");
 				}
+			});
+	
+			$searchInput.on("keyup input", function () {
+				searchText = jQuery(this).val().toLowerCase().trim();
+				applyProductFilter();
+			});
+	
+			$clearButton.on("click", function () {
+				$searchInput.val("");
+				searchText = "";
+				applyProductFilter();
+				$searchInput.focus();
 			});
 		});
 	</script>
